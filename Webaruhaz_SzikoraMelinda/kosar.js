@@ -24,7 +24,7 @@ class Kosar {
 
         for(let i = 0; i < this.kosarTomb.length; i++) {
 
-            $("table").append("<tr> <th>" + this.kosarTomb[i]['nev'] + "</th> <th>" + this.kosarTomb[i]['ar'] + " Ft</th> <button class='torol'>Törlés</button> </tr>");
+            $("table").append("<tr> <th>" + this.kosarTomb[i]['nev'] + "</th> <th>" + this.kosarTomb[i]['ar'] + " Ft</th> <th> <button class='torol' id='"+ i +"'>Törlés</button> </th> </tr>");
 
             osszeg += this.kosarTomb[i]['ar'];
         }
@@ -32,16 +32,13 @@ class Kosar {
         $("#kosarTartalom").append("</table>");
         $("#osszAr").append(osszeg + " Ft");
 
-        $(".torol").on("click", () => {
+        $(".torol").on("click", (event) => {
+            let id = $(event.target).attr("id");
+            this.kosarTomb.splice(id, 1);
 
-            this.termekTorles();
+            this.kosarMegjelenit();
         });
     }
 
-    termekTorles() {
-
-        
-    }
-
-
+    
 }
