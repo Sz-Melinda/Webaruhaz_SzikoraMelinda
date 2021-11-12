@@ -24,7 +24,7 @@ class Kosar {
 
         for(let i = 0; i < this.kosarTomb.length; i++) {
 
-            $("table").append("<tr> <th>" + this.kosarTomb[i]['nev'] + "</th> <th>" + this.kosarTomb[i]['ar'] + " Ft</th> <th> <button class='torol' id='"+ i +"'>Törlés</button> </th> </tr>");
+            $("table").append("<tr> <th>" + this.kosarTomb[i]['nev'] + "</th> <th>" + this.kosarTomb[i]['ar'] + " Ft</th> <th> <button class='torol' id='"+ i +"'> X </button> </th> </tr>");
 
             osszeg += this.kosarTomb[i]['ar'];
         }
@@ -40,5 +40,5 @@ class Kosar {
         });
     }
 
-    
+
 }
