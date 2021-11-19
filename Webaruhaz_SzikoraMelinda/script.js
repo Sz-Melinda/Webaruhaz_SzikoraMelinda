@@ -2,7 +2,9 @@
 $(function () {
 
     const termekekTomb = [];
-    const fajlNev="termekek.json";
+
+    /* JSON szerveres elérési út */
+    const fajlNev= "http://localhost:3000/termekek";
 
     const kosar = new Kosar();
 
@@ -10,26 +12,7 @@ $(function () {
 
 
     /* adatok beolvasása fájlból */
-    function adatBetolt(fajlNev, tomb, myCallback) {
-
-        $.ajax({ 
-
-            url: fajlNev,
-
-            success: function (result) {
-                result.forEach(element => {
-
-                    console.log(element);
-                    termekekTomb.push(element);  
-                });
-                
-                myCallback(tomb);
-            },
-        });
-
-        console.log(termekekTomb);
-    }
- 
+    
     
     /* oop-s kiírás */
     function Kiir(tomb){

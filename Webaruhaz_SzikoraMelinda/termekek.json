@@ -1,33 +1,46 @@
-[
-    {
-        "nev": "Fejhallgató",
-        "leiras": "Bluetooth-os fejhallgató, piros színben",
-        "ar": 20000,
-        "kep": "kepek/kep_1.jpg"
-    },
-    {
-        "nev": "Fényképezőgép",
-        "leiras": "Tükör-reflexes Fujifilm fényképező ",
-        "ar": 200000,
-        "kep": "kepek/kep_2.jpg"
-    },
-    {
-        "nev": "Cipő",
-        "leiras": "Fekete sport cipő, több méretben",
-        "ar": 12000,
-        "kep": "kepek/kep_3.jpg"
-    },
-    {
-        "nev": "Rubik kocka",
-        "leiras": "Méretek: 2x2, 3x3, 4x4",
-        "ar": 5000,
-        "kep": "kepek/kep_4.jpg"
-    },
-    {
-        "nev": "Kulacs",
-        "leiras": "Műanyag kulacs, sportoláshoz",
-        "ar": 2500,
-        "kep": "kepek/kep_5.jpg"
-    }
-    
-]
+
+{
+    "termekek": [
+
+        {
+            "id": 1,
+            "nev": "Fejhallgató",
+            "leiras": "Bluetooth-os fejhallgató, piros színben",
+            "ar": 20000,
+            "kep": "kepek/kep_1.jpg"
+        },
+
+        {
+            "id": 2,
+            "nev": "Fényképezőgép",
+            "leiras": "Tükör-reflexes Fujifilm fényképező ",
+            "ar": 200000,
+            "kep": "kepek/kep_2.jpg"
+        },
+
+        {
+            "id": 3,
+            "nev": "Cipő",
+            "leiras": "Fekete sport cipő, több méretben",
+            "ar": 12000,
+            "kep": "kepek/kep_3.jpg"
+        },
+
+        {
+            "id": 4,
+            "nev": "Rubik kocka",
+            "leiras": "Méretek: 2x2, 3x3, 4x4",
+            "ar": 5000,
+            "kep": "kepek/kep_4.jpg"
+        },
+
+        {
+            "id": 5,
+            "nev": "Kulacs",
+            "leiras": "Műanyag kulacs, sportoláshoz",
+            "ar": 2500,
+            "kep": "kepek/kep_5.jpg"
+        }
+        
+    ]
+}
